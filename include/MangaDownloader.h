@@ -40,6 +40,7 @@ public:
     virtual void WINAPI SetCookies(PCSTR pszCookies) = 0;
     virtual void WINAPI SetHeaders(PCSTR pszHeaders) { /* Nothing */ }
     virtual void WINAPI Done(void) = 0;
+    virtual void WINAPI SetOption(PCSTR pszName, PCSTR pszValue) { /* Nothing */ }
 };
 
 class Downloader
